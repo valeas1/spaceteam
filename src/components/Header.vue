@@ -73,7 +73,7 @@ onBeforeUnmount(()=> {
 
 @media screen and (min-width: 1200px) {
   .header {
-    margin-top: 40px;
+    padding-top: 40px;
   }
 }
 </style>

@@ -10,6 +10,18 @@
                     {{ planet.name }}
             </li>
         </ul>
+        <h2 class="destination__title">{{ tab.name }}</h2>
+        <p class="destination__text">{{ tab.description }}</p>
+        <div class="destination__line">
+            <div>
+                <p class="destination__predistance">AVG. DISTANCE</p>
+                <p class="destination__distance">{{ tab.distance }}</p>
+            </div>
+            <div>
+                <p class="destination__pretime">Est. travel time</p>
+                <p class="destination__time">{{ tab.travel }}</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -34,6 +46,7 @@ const tabHandler = (e: Event) => {
     flex-direction: column;
     align-items: center;
     padding-top: 24px;
+    padding-bottom: 32px;
 }
 .destination__pretitle {
     color: #FFF;
@@ -63,7 +76,7 @@ const tabHandler = (e: Event) => {
 }
 .destination__list-item {
     color: #D0D6F9;
-    font-family: Barlow Condensed;
+    font-family: "Barlow Condensed";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -76,5 +89,149 @@ const tabHandler = (e: Event) => {
 .destination__list-item--active {
     border-color: #FFF;
 }
+.destination__title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Bellefair";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.destination__text {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: "Barlow";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    width: 85%;
+    margin-top: 5px;
+}
+.destination__line {
+    width: 90%;
+    border-top: 1px solid #383B4B;
+    margin-top: 32px;
+}
+.destination__predistance {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: "Barlow Condensed";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+.destination__distance {
+    color: #FFF;
+    text-align: center;
+    font-family: "Bellefair";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+.destination__pretime {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: "Barlow Condensed";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+.destination__time {
+    color: #FFF;
+    text-align: center;
+    font-family: "Bellefair";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
 
+@media screen and (min-width: 768px) {
+    .destination {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .destination__pretitle {
+        align-self: flex-start;
+        font-size: 20px;
+        letter-spacing: 3.375px;
+    }
+    .destination__img {
+        width: 300px;
+        height: 300px;
+        margin-top: 60px;
+    }
+    .destination__list {
+        gap: 36px;
+    }
+    .destination__list-item {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        border-bottom: 3px solid transparent;
+    }
+    .destination__list-item--active {
+        border-color: #FFF;
+    }
+    .destination__title {
+        font-size: 80px;
+        margin-top: 32px;
+    }
+    .destination__text {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+    .destination__line {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    @media screen and (min-width: 1200px){
+        .destination {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .destination__pretitle {
+            grid-column: 1/3;
+        }
+        .destination__img {
+            grid-column: 1/2;
+            grid-row: 2/6;
+            justify-self: center;
+            width: 445px;
+            height: 445px;
+        }
+        .destination__title {
+            font-size: 100px;
+        }
+        .destination__text {
+            font-size: 18px;
+            line-height: 32px;
+            text-align: start;
+        }
+        .destination__list-item {
+            cursor: pointer;
+        }
+        .destination__list-item:hover {
+            border-color: rgba(255, 255, 255, 0.5)
+        }
+    }
+}
 </style>
