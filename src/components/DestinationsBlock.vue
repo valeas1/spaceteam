@@ -1,7 +1,7 @@
 <template>
     <div class="destination">
         <p class="destination__pretitle"><span>01</span> Pick your destination</p>
-        <img class="destination__img" :src="tab.images.png">
+        <img class="destination__img" :src="tab.images.png" />
         <ul class="destination__list">
             <li 
                 :class="(planet.name === tab.name)? 'destination__list-item destination__list-item--active' : 'destination__list-item'" 

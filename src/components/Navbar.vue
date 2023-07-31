@@ -32,6 +32,7 @@ const toggleShowHandler = () => {
     padding: 32px 26px 0 32px;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
+    z-index: 1000;
 }
 .navbar-hid {
     position: absolute;
