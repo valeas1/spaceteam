@@ -27,11 +27,12 @@ import MainBlock from '../components/MainBlock.vue'
       background-position: 0px 10vh;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1300px) {
     .wrapper {
       background-image: url('../assets/home/background-home-desktop.png'), url('../assets/home/background-top.png');
       background-position-x: 6vh;
       background-position-y: center;
+      height: 100vh;
     }
   }
 </style>
