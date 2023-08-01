@@ -16,7 +16,6 @@ import MainBlock from '../components/MainBlock.vue'
   .wrapper {
       position: relative;
       width: 100%;
-      height: 100vh;
       background-image: url('../assets/home/background-bottom.png'), url('../assets/home/background-top.png');
       background-repeat: no-repeat, repeat;
       background-position: 0px 30vh;

@@ -14,11 +14,13 @@ import CrewBlock from '@/components/CrewBlock.vue';
 
 <style scoped>
 .wrapper {
+    position: relative;
+    overflow-x: hidden;
     background-image: url('../assets/crew/background-crew-desktop.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 </style>

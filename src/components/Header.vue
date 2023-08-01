@@ -77,3 +77,8 @@ onBeforeUnmount(()=> {
   }
 }
 </style>
+<style>
+  .no-scroll {
+    overflow: hidden;
+  }
+</style>

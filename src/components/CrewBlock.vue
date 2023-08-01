@@ -132,6 +132,8 @@ function slideStartHandler(obj: any) {
     border-radius: 50%;
     background-color: #FFF;
     opacity: 0.2;
+    cursor: pointer;
+    transition: all 0.3 ease;
 }
 .crew__button--active {
     opacity: 1;
@@ -146,6 +148,8 @@ function slideStartHandler(obj: any) {
         margin-top: 35px;
     }
     .crew__pretitle {
+        font-size: 20px;
+        letter-spacing: 3.375px;
         align-self: self-start;
     }
     .crew__list {
@@ -158,11 +162,61 @@ function slideStartHandler(obj: any) {
     }
     .crew__name {
         font-size: 40px;
+        line-height: 28px
     }
     .crew__bio {
         font-size: 16px;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .crew {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        width: 1300px;
+        margin: 0 auto;
+        padding-top: 76px;
+    }
+    .crew__carousel {
+        grid-row: 1/7;
+        grid-column: 2/3;
+        overflow: hidden;
+    }
+    .crew__pretitle {
+        font-size: 28px;
+        letter-spacing: 4.725px;
+    }
+    .crew__role {
+        font-size: 32px;
+        text-align: start;
+        justify-self: start;
+        margin-top: 156px;
+    }
+    .crew__name {
+        font-size: 56px;
+        justify-self: start;
+        margin-top: 32px;
+    }
+    .crew__bio {
+        font-size: 18px;
+        text-align: start;
+        line-height: 32px;
+        justify-self: start;
+        margin-top: 28px;
+        width: 60%;
+    }
+    .crew__list {
+        align-self: end;
+        margin-top: auto;
+        grid-row: 6/7;
+    }
+    .crew__button:hover{
+        opacity: 0.5;
+    }
+    .crew__button--active:hover {
+        opacity: 1;
+    }
+ }
 </style>
 <style>
 .carousel__pagination {
@@ -179,6 +233,14 @@ function slideStartHandler(obj: any) {
     .carousel__pagination {
         order: -1;
         margin-top: 0px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .carousel__viewport {
+        width: 100%;
+    }
+    .carousel__slide {
+        align-items: end;
     }
 }
 </style>

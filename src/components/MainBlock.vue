@@ -18,6 +18,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 10px 0 10px;
+    margin-bottom: 250px;
 }
 .mainblock-pretitle {
     color: #D0D6F9;

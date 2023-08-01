@@ -26,6 +26,7 @@ const toggleShowHandler = () => {
     display: flex;
     flex-direction: column;
     right: 0;
+    top: 0;
     bottom: 0;
     width: 70%;
     height: 100%;
