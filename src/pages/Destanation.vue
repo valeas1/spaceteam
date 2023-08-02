@@ -17,7 +17,7 @@ import DestinationsBlock from '@/components/DestinationsBlock.vue';
 .wrapper {
     position: relative;
     overflow-x: hidden;
-    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-image: url('../assets/destination/background-destination-desktop.jpeg');
     background-size: cover;
     background-repeat: repeat-y;
     width: 100%;

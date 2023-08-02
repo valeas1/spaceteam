@@ -16,7 +16,7 @@ import CrewBlock from '@/components/CrewBlock.vue';
 .wrapper {
     position: relative;
     overflow-x: hidden;
-    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    background-image: url('../assets/crew/background-crew-desktop.jpeg');
     background-size: cover;
     background-position: center;
     width: 100%;

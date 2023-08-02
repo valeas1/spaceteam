@@ -16,7 +16,7 @@ import TechnogyBlock from '@/components/TechnogyBlock.vue';
     .wrapper {
         position: relative;
         overflow-x: hidden;
-        background-image: url('../assets/technology/background-technology-desktop.jpg');
+        background-image: url('../assets/technology/background-technology-desktop.jpeg');
         background-size: cover;
         background-position: left;
         height: 100vh;
