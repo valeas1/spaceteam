@@ -7,19 +7,23 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: Main
+    component: Main,
+    name: 'Spaceteam - Home'
   },
   {
     path: '/destanation',
-    component: Destanation
+    component: Destanation,
+    name: 'Spaceteam - Destanation'
   },
   {
     path: '/crew',
-    component: Crew
+    component: Crew,
+    name: 'Spaceteam - Crew'
   },
   {
     path: '/technology',
-    component: Technology
+    component: Technology,
+    name: 'Spaceteam - Technology'
   }
 ]
 
@@ -28,4 +32,8 @@ const router = createRouter({
   history: createWebHistory()
 })
 
+router.beforeEach((to, from, next) => {
+  document.title = to.name as string
+  next()
+})
 export default router
