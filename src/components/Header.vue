@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <img class="header__logo" src='../assets/shared/logo.svg' alt="logo">
+        <RouterLink to="/"><img class="header__logo" src='../assets/shared/logo.svg' alt="logo"></RouterLink>
         <img class="header__hamburger" @click="toggleShowHandler" src="../assets/shared/icon-hamburger.svg" alt="hamburger">
         <Transition name="slide-fade">
             <Navbar v-if="(screenWidth >= 768)? true : isShow" @closeNavbar="toggleShowHandler"></Navbar>

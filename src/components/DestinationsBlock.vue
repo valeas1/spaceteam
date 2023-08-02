@@ -203,13 +203,20 @@ const tabHandler = (e: Event) => {
         justify-content: space-around;
         margin-top: 50px;
     }
-    @media screen and (min-width: 1200px){
+}
+@media screen and (min-width: 1300px){
         .destination {
+            max-width: 1300px;
+            margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            padding-top: 76px;
+            padding-bottom: 116px;
         }
         .destination__pretitle {
             grid-column: 1/3;
+            font-size: 28px;
+            letter-spacing: 4.725px;
         }
         .destination__img {
             grid-column: 1/2;
@@ -219,12 +226,17 @@ const tabHandler = (e: Event) => {
             height: 445px;
         }
         .destination__title {
+            justify-self: start;
             font-size: 100px;
+            margin-top: 36px;
         }
         .destination__text {
             font-size: 18px;
             line-height: 32px;
             text-align: start;
+        }
+        .destination__list {
+            margin-top: 64px;
         }
         .destination__list-item {
             cursor: pointer;
@@ -233,5 +245,4 @@ const tabHandler = (e: Event) => {
             border-color: rgba(255, 255, 255, 0.5)
         }
     }
-}
 </style>

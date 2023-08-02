@@ -92,7 +92,7 @@
         letter-spacing: 2px;
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
     .mainblock {
         padding-top: 251px;
         display: grid;
